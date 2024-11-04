@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavigationContainer, useNavigation } from '@react-navigation/native'
+import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { Provider, useDispatch, useSelector } from 'react-redux'
@@ -52,7 +52,7 @@ const AppNavigator  = () => {
   )
 };
 
-export default function App() {
+export default function Main() {
   return (
     <Provider store={store}>
       <AppNavigator />
